@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <TabPane prefHeight="461.0" prefWidth="752.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Bienvenu">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="747.0">
+                     <children>
+                        <ImageView fitHeight="161.0" fitWidth="377.0" layoutX="188.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/educ_univ-Cadi_Ayyad-logo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="264.0" fitWidth="273.0" layoutX="244.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/ge.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="588.0" layoutY="350.0" mnemonicParsing="false" onAction="#goEmail" text="Envoyer un  email" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Département">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="44.0" layoutY="120.0" mnemonicParsing="false" onAction="#addDepartement" style="-fx-background-color: A35119;" text="Ajouter Département" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="303.0" layoutY="120.0" mnemonicParsing="false" onAction="#editDepartement" style="-fx-background-color: A35119;" text="Modifier Département" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="543.0" layoutY="120.0" mnemonicParsing="false" onAction="#deleteDepartement" style="-fx-background-color: A35119;" text="Supprimer Département" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <TableView fx:id="departements" layoutX="33.0" layoutY="204.0" prefHeight="200.0" prefWidth="678.0" />
+                        <Label layoutX="283.0" layoutY="171.0" text="Listes des Départements" textFill="#a35119">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font></Label>
+                        <ImageView fitHeight="66.0" fitWidth="240.0" layoutX="253.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/educ_univ-Cadi_Ayyad-logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Matière">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="70.0" layoutY="126.0" mnemonicParsing="false" onAction="#addMatiere" style="-fx-background-color: A35119;" text="Ajouter Matière" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="324.0" layoutY="126.0" mnemonicParsing="false" onAction="#editMatiere" style="-fx-background-color: A35119;" text="Modifier Matière" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="559.0" layoutY="126.0" mnemonicParsing="false" onAction="#deleteMatiere" style="-fx-background-color: A35119;" text="Supprimer Matière" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Label layoutX="310.0" layoutY="168.0" text="Liste des Matières" textFill="#a35119">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font></Label>
+                        <TableView fx:id="matieres" layoutX="40.0" layoutY="202.0" prefHeight="193.0" prefWidth="670.0" />
+                        <ImageView fitHeight="51.0" fitWidth="248.0" layoutX="255.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/educ_univ-Cadi_Ayyad-logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Enseignant">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="58.0" layoutY="141.0" mnemonicParsing="false" onAction="#addProf" style="-fx-background-color: A35119;" text="Ajouter Enseignant" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="239.0" layoutY="141.0" mnemonicParsing="false" onAction="#editProf" style="-fx-background-color: A35119;" text="Modifier Enseignant" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="437.0" layoutY="141.0" mnemonicParsing="false" onAction="#recherche" style="-fx-background-color: A35119;" text="Rechercher" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Button layoutX="576.0" layoutY="141.0" mnemonicParsing="false" onAction="#deleteProf" style="-fx-background-color: A35119;" text="Supprimer Enseignant" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font></Button>
+                        <Label layoutX="299.0" layoutY="188.0" prefHeight="17.0" prefWidth="164.0" text="Liste des Enseignants" textFill="#a1501a">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font></Label>
+                        <TableView fx:id="profs" layoutX="40.0" layoutY="216.0" prefHeight="200.0" prefWidth="681.0" />
+                        <ImageView fitHeight="52.0" fitWidth="245.0" layoutX="254.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/educ_univ-Cadi_Ayyad-logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

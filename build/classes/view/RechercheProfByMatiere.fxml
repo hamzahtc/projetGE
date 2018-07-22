@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RechercheProfByMatiereController">
+   <children>
+      <Button layoutX="502.0" layoutY="158.0" mnemonicParsing="false" onAction="#findProf" style="-fx-background-color: A35119;" text="Recherche" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <ComboBox fx:id="matiere" layoutX="291.0" layoutY="158.0" prefWidth="150.0" />
+      <TableView fx:id="profs" layoutX="80.0" layoutY="201.0" prefHeight="235.0" prefWidth="571.0" />
+      <Label layoutX="345.0" layoutY="134.0" text="Matière" textFill="#a35119">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="departement" layoutX="83.0" layoutY="158.0" onAction="#findMatiereByDep" prefWidth="150.0" />
+      <Label layoutX="123.0" layoutY="134.0" text="Département" textFill="#a35119">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="48.0" layoutY="458.0" mnemonicParsing="false" onAction="#goRecherche" style="-fx-background-color: A35119;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="138.0" fitWidth="90.0" layoutX="599.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="74.0" text="Rechercher Enseignant" textFill="#a35119">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
